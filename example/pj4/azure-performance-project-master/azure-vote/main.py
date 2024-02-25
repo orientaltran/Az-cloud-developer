@@ -64,7 +64,10 @@ if ("TITLE" in os.environ and os.environ['TITLE']):
 else:
     title = app.config['TITLE']
 
-# Redis Connection
+# Comment/remove the next two lines of code.
+# Redis Connection to a local server running on the same machine where the current FLask app is running. 
+# r = redis.Redis()
+# Redis configurations
 redis_server = os.environ['REDIS']
 
 # Redis Connection to another container
